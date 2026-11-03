@@ -1,0 +1,5 @@
+(library
+ (name ocaml_parser_lexer)
+ (public_name ocaml_parser.lexer)
+ (libraries compiler-libs.common)
+ (preprocess no_preprocessing))

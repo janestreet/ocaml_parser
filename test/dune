@@ -1,0 +1,6 @@
+(library
+ (name test_ocaml_parser)
+ (libraries core expect_test_helpers_base expect_test_helpers_core
+   ocaml_parser compiler-libs.common ppxlib refactor_traversal)
+ (preprocess
+  (pps ppx_jane ppxlib.metaquot -compare-require-explicit-locality)))

@@ -1,0 +1,7 @@
+(library
+ (name ocaml_parser)
+ (public_name ocaml_parser)
+ (libraries base bin_prot ocaml-compiler-libs.common ocaml_parser_lexer
+   compiler-libs.common ppxlib ppxlib_jane)
+ (preprocess
+  (pps ppx_jane -compare-require-explicit-locality)))
